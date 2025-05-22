@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf node_modules",
+    "build": "cd client && npm install && npm run build",
+    "start": "node server.js",
+    "postinstall": "npm rebuild bcrypt --build-from-source"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^2.2.3",
+    "@heroicons/react": "^2.2.0",
+    "adm-zip": "^0.5.16",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "express-subdomain": "^1.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "nodemailer": "^6.10.0",
+    "twilio": "^5.6.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  },
+  "description": ""
+}

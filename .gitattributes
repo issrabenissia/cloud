@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Forcer les fins de ligne LF pour tous les fichiers texte
+* text=auto eol=lf
+
+# S'assurer que certains fichiers binaires ne sont pas modifiés
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+.env
